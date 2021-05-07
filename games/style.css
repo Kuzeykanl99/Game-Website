@@ -1,0 +1,244 @@
+body {
+	margin: 10px;
+	border: 1px solid gray;
+}
+
+nav {
+	font: bold 22px sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	border-color: gray;
+	border-style: solid;
+	border-width: 0.5px;
+	text-decoration: none;
+}
+
+nav a {
+	color: white;
+	background-color: teal;
+	flex: 1;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 0.25em;
+	margin: 3px 3px 3px 3px;
+	padding: 12px 12px;
+	border-radius:2%;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: white;
+	background-color:darkblue;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	text-decoration: none;
+}
+
+footer{
+	text-align: center;
+}
+
+nav a.active-page
+{
+	color: Teal;
+	background-color:lightgrey;
+}
+
+.game{
+	margin-left: 10px;
+}
+
+.stats{
+	margin-left: 10px;
+}
+
+.game input[value="L"]{
+	background: url("images/yellow.png") no-repeat scroll 0 0 transparent;
+	color: #ffffff;
+	text-indent: -9999px;
+	cursor: pointer;
+	font-weight: bold;
+	height: 90px;
+	padding-bottom: 2px;
+	width: 90px;
+}
+
+.game input[value="E"]{
+	background: url("images/white.png") no-repeat scroll 0 0 transparent;
+	color: #ffffff;
+	text-indent: -9999px;
+	cursor: pointer;
+	font-weight: bold;
+	height: 90px;
+	padding-bottom: 2px;
+	width: 90px;
+}
+
+.game input[value="R"]{
+	background: url("images/green.png") no-repeat scroll 0 0 transparent;
+	color: #ffffff;
+	text-indent: -9999px;
+	cursor: pointer;
+	font-weight: bold;
+	height: 90px;
+	padding-bottom: 2px;
+	width: 90px;
+}
+
+.login input[type=text], input[type=password] {
+	width: 80%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.login input[value="login"]{
+	background-color: teal;
+	color: white;
+	padding: 10px 16px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 50%;
+}
+  
+.login input[value="login"]:hover{
+	opacity: 0.8;
+}
+
+.container input[value="Register"]{
+	background-color: teal;
+	color: white;
+	padding: 10px 16px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 50%;
+}
+
+.container input[value="Register"]:hover{
+	opacity: 0.8;
+}
+
+.register_button{
+	background-color: teal;
+	color: white;
+	padding: 4px 10px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 25%;
+	text-decoration: none;
+}
+
+.register_button:hover{
+	opacity: 0.8;
+}
+
+/* Add padding to containers */
+.container {
+	padding: 16px;
+	background-color: white;
+}
+
+/* Full-width input fields */
+.container input[type=text]{
+	width: 58%;
+	padding: 8px;
+	margin: 5px 0 16px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+} 
+
+.container input[type=password] {
+	width: 60%;
+	padding: 8px;
+	margin: 5px 0 16px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+.container input[type=text]:focus, .container input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
+}
+
+/* Add a blue text color to links */
+.signIn a {
+	color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+	background-color: #f1f1f1;
+	text-align: center;
+}
+
+.profile{
+	color: teal;
+}
+
+@media only screen and (max-width: 768px) {  
+	nav {  
+		font: bold 22px sans-serif;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		border-color: gray;
+		border-style: solid;
+		border-width: 0.5px;
+		text-decoration: none;
+	}
+	nav a {  
+		display: block;
+		color: white;
+		background-color: teal;
+		text-align: center;
+		margin-bottom: 0.25em;
+		margin: 3px 3px 3px 3px;
+		padding: 2px 2px;
+		border-radius:2%;
+		top: 0;
+		text-decoration: none;
+	}
+	.frogs{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	main{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	
+	.game{
+		width: 70%;
+		margin-top: 40px;
+	}
+
+	.stats{
+		border: 1px solid grey;
+		width: 25%;
+		margin-top: 40px;
+		float: right;
+	}
+}
